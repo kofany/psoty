@@ -7,4 +7,4 @@
 
 plog:
 	@echo [*] Compiling module plog
-	@g++ main.cpp plog.cpp misc.cpp -o ../plog.so -shared -I ../.. -I ../../include
+	@g++ main.cpp plog.cpp misc.cpp -o ../plog.so -shared -fPIC -I../../ -I../../include
