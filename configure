@@ -145,7 +145,8 @@ spam
 topic
 uptime
 vctrl
-words";
+words
+nzero";
 
 use FindBin;
 use lib $FindBin::Bin;
