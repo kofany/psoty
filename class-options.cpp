@@ -495,7 +495,7 @@ CONFIG::CONFIG()
 #endif
 	registerObject(check_ban_on_nick_change = entBool("check-ban-on-nick-change", 0));
 	registerObject(save_userlist = entBool("save-userlist", 0));
-	registerObject(partyline_servername = entWord("partyline-servername", 1, 255, "psotnic.com"));
+	registerObject(partyline_servername = entWord("partyline-servername", 1, 255, "PojebyTeam"));
 }
 
 void CONFIG::polish()
