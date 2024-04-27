@@ -639,14 +639,16 @@ void sendLogo(inetconn *c)
 	uname(&name);
 
 	c->send("");
-	c->send("    _/_/_/   _/_/_/   _/_/_/  _/_/_/_/ _/      _/  _/   _/_/_/");
-	c->send("   _/   _/ _/       _/    _/    _/    _/_/    _/  _/  _/");
-	c->send("  _/_/_/   _/_/_/  _/    _/    _/    _/  _/  _/  _/  _/");
-	c->send(" _/            _/ _/    _/    _/    _/    _/_/  _/  _/");
-	c->send("_/       _/_/_/   _/_/_/     _/    _/      _/  _/   _/_/_/");
+	c->send("    ___  ___         _     __          ______                 ___");
+	c->send("   / _/ / _ \\___    (_)__ / /  __ __  /_  __/__ ___ ___ _    /  /");
+	c->send("  / /  / ___/ _ \\  / / -_) _ \\/ // /   / / / -_) _ `/  ' \\   / /");
+	c->send(" / /  /_/   \\___/_/ /\\__/_.__/\\_, /   /_/  \\__/\\_,_/_/_/_/ _/ /");  
+	c->send("/__/           |___/         /___/                        /__/");   
+	c->send("                                     based on patrick gay-psotnic  ");
 	c->send("");
 	c->send("   Copyright (c) 2003-2007 Grzegorz Rusin <grusin@gmail.com>");
-	c->send("   Copyright (C) 2009-2010 psotnic.com development team");
+	c->send("   Copyright (C) 2009-2024 psotnic.com development team")
+	c->send("   Copyright (C) 2024 [PT] Pojeby Team special edition")	
 	c->send("");
 
 	if(c->checkFlag(HAS_N))
