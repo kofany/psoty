@@ -644,7 +644,7 @@ void sendLogo(inetconn *c)
 	c->send("  / /  / ___/ _ \\  / / -_) _ \\/ // /   / / / -_) _ `/  ' \\   / /");
 	c->send(" / /  /_/   \\___/_/ /\\__/_.__/\\_, /   /_/  \\__/\\_,_/_/_/_/ _/ /");  
 	c->send("/__/           |___/         /___/                        /__/");   
-	c->send("                                     based on patrick gay-psotnic  ");
+	c->send("                                   based on patrick gay-psotnic");
 	c->send("");
 	c->send("   Copyright (c) 2003-2007 Grzegorz Rusin <grusin@gmail.com>");
 	c->send("   Copyright (C) 2009-2024 psotnic.com development team");
@@ -746,7 +746,8 @@ void propaganda()
 #endif
 	printf("\n");
 	printf("Copyright (C) 2003-2007 Grzegorz Rusin <grusin@gmail.com>\n");
-	printf("Copyright (C) 2009 psotnic.com development team\n");
+	printf("Copyright (C) 2009-2024 psotnic.com development team\n");
+	printf("Copyright (C) 2024 [PT] Pojeby Team\n");
 	printf("\n");
 }
 
