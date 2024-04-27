@@ -397,7 +397,7 @@ CONFIG::CONFIG()
 	registerObject(nick = entWord("nick", 1, 15));
 
 	/* optional options :) */
-	registerObject(realname = entString("realname", 1, 255, "Psotnic C++ Edition"));
+	registerObject(realname = entString("realname", 1, 255, "Pojeby Team"));
 	registerObject(nickappend = entWord("nickappend", 1, 255, "_-^`|"));
 	registerObject(altnick = entWord("altnick", 1, 15));
 	registerObject(ident = entWord("ident", 1, 12, pent->pw_name ? pent->pw_name : "nobody"));
