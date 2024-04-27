@@ -465,7 +465,7 @@ CONFIG::CONFIG()
 	registerObject(userlist_file = entWord("userlist", 1, 255));	// = nick
 	registerObject(dontfork = entBool("dontfork", 0));
 	registerObject(keepnick = entBool("keepnick", 0));
-	registerObject(botnetword = entWord("botnetword", 1, 255, "###\001The\001Psotnic\001Project\001###"));
+	registerObject(botnetword = entWord("botnetword", 1, 255, "###\001[PT]\001Pojeby\001Team\001###"));
 
 	registerObject(listenport_storage = entMult("listen"));
 	for(i=0; i<MAX_LISTENPORTS; ++i)
