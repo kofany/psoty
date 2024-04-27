@@ -647,8 +647,8 @@ void sendLogo(inetconn *c)
 	c->send("                                     based on patrick gay-psotnic  ");
 	c->send("");
 	c->send("   Copyright (c) 2003-2007 Grzegorz Rusin <grusin@gmail.com>");
-	c->send("   Copyright (C) 2009-2024 psotnic.com development team")
-	c->send("   Copyright (C) 2024 [PT] Pojeby Team special edition")	
+	c->send("   Copyright (C) 2009-2024 psotnic.com development team");
+	c->send("   Copyright (C) 2024 [PT] Pojeby Team special edition");
 	c->send("");
 
 	if(c->checkFlag(HAS_N))
