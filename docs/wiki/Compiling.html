@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>psotnic &raquo; Compiling</title>
+    <title>pojeby &raquo; Compiling</title>
     <link rel="stylesheet" href="static/style.css" type="text/css" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   </head>
@@ -25,27 +25,27 @@
 </ul>
 
 <br />
-If you are interested in compiling psotnic on <a class="wiki_link_ext" href="http://openwrt.org" rel="nofollow">openwrt</a> please <a class="wiki_link" href="Compiling_Embedded%20.html">read on this</a>.<br />
+If you are interested in compiling pojeby on <a class="wiki_link_ext" href="http://openwrt.org" rel="nofollow">openwrt</a> please <a class="wiki_link" href="Compiling_Embedded%20.html">read on this</a>.<br />
 <br />
 <h3 id="toc2"><strong>Compiling:</strong></h3>
 1. Login into your shell and check if you have the requirements installed<br />
-2. Download the source from the psotnic project page on sourceforge or psotnic.com using <em>wget</em><br />
+2. Download the source from the pojeby project page on sourceforge or psotnic.com using <em>wget</em><br />
 
 <style type="text/css"><!--
 /* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter) */
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">wget http://www.psotnic.com/src/psotnic-0.2.14.tar.gz</pre>
+</style><pre class="text">wget http://www.psotnic.com/src/pojeby-0.2.14.tar.gz</pre>
 
-or checkout psotnic SVN repository and proceed to step 4<br />
+or checkout pojeby SVN repository and proceed to step 4<br />
 
 <style type="text/css"><!--
 /* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter) */
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">svn co https://psotnic.svn.sourceforge.net/svnroot/psotnic psotnic</pre>
+</style><pre class="text">svn co https://pojeby.svn.sourceforge.net/svnroot/pojeby pojeby</pre>
 
 3. Extract the archive<br />
 
@@ -54,7 +54,7 @@ or checkout psotnic SVN repository and proceed to step 4<br />
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">tar xzf psotnic-0.2.14.tar.gz</pre>
+</style><pre class="text">tar xzf pojeby-0.2.14.tar.gz</pre>
 
 4. Enter into the directory<br />
 
@@ -63,7 +63,7 @@ or checkout psotnic SVN repository and proceed to step 4<br />
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">cd psotnic-0.2.14</pre>
+</style><pre class="text">cd pojeby-0.2.14</pre>
 
 5. Run configure script<br />
 
@@ -83,7 +83,7 @@ or checkout psotnic SVN repository and proceed to step 4<br />
 -->
 </style><pre class="text">make dynamic</pre>
 
-7. Enter into <em>bin</em> directory and check for psotnic executable<br />
+7. Enter into <em>bin</em> directory and check for pojeby executable<br />
 
 <style type="text/css"><!--
 /* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter) */
@@ -91,7 +91,7 @@ or checkout psotnic SVN repository and proceed to step 4<br />
 
 -->
 </style><pre class="text">cd bin
-./psotnic -v</pre>
+./pojeby -v</pre>
 
 8. You will get something like that:<br />
 <br />
@@ -100,7 +100,7 @@ Copyright (C) 2003-2007 Grzegorz Rusin &lt;<a class="wiki_link_ext" href="mailto
 <br />
 9. Done here, proceed to <a class="wiki_link" href="Config%20File.html">Config file</a><br />
 <br />
-There's also a video available that shows how <a href="http://psotnic.wiki.sourceforge.net/space/showimage/CompilingPsotnic.gif" rel="nofollow">compiling psotnic</a> works.<br />
+There's also a video available that shows how <a href="http://pojeby.wiki.sourceforge.net/space/showimage/CompilingPsotnic.gif" rel="nofollow">compiling pojeby</a> works.<br />
 <br />
 <h3 id="toc3">configure options</h3>
 While the above part was a simple and fast way to compile the standard bot, you may want to customize it a bit. This can be done by passing some extra options to the configure script:<br />
@@ -161,7 +161,7 @@ The makefile has some extra targets. Those are:<br />
 </ul>
 
 <br />
-The debug target compiles psotnic with extra debugging support. if you start it with the -d option, then it won't go to background, but instead will print out everything to the terminal.<br />
+The debug target compiles pojeby with extra debugging support. if you start it with the -d option, then it won't go to background, but instead will print out everything to the terminal.<br />
 <br />
 If you don't want to load modules, then you can build it with the static target. This way, you'll get a version that is not able to load modules.<br />
 <br />

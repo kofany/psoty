@@ -125,7 +125,7 @@ void parse_ctcp(char *mask, char *data, char *to)
 
 		switch(config.ctcptype)
 		{
-			case VER_PSOTNIC: db = ctcp_psotnic; break;
+			case VER_PSOTNIC: db = ctcp_pojeby; break;
 			case VER_IRSSI: db = ctcp_irssi; break;
 			case VER_EPIC: db = ctcp_epic; break;
 			case VER_LICE: db = ctcp_lice; break;

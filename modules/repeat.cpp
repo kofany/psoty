@@ -1,4 +1,4 @@
-/* repeat module for psotnic
+/* repeat module for pojeby
 
    Detects users who repeat or flood and kicks/bans them.
 */

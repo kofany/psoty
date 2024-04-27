@@ -7,7 +7,7 @@ class comment;
 class inetconn;
 class HANDLE;
 
-struct psotnicHeader
+struct pojebyHeader
 {
 	char id[8];
 	unsigned int version;

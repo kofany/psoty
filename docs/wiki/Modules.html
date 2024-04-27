@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>psotnic &raquo; Modules</title>
+    <title>pojeby &raquo; Modules</title>
     <link rel="stylesheet" href="static/style.css" type="text/css" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   </head>
@@ -49,7 +49,7 @@ For example:<br />
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">load /home/jack70/psotnic-0.2.14/modules/vctrl.so</pre>
+</style><pre class="text">load /home/jack70/pojeby-0.2.14/modules/vctrl.so</pre>
 
 <u>This is NOT a partyline command!</u> If you want to load modules via partyline, read the <a class="wiki_link" href="bc%20command.html">Botnet Control</a> document in advanced techniques section.<br />
 Each bot can load more than one module, but overcharging a single bot with many modules is not a good idea.<br />
@@ -64,7 +64,7 @@ If you are a module developer you probably would like to have the ability of cha
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">debugLoad /home/jack70/psotnic-0.2.14/modules/vctrl.so</pre>
+</style><pre class="text">debugLoad /home/jack70/pojeby-0.2.14/modules/vctrl.so</pre>
 
 <br />
 <h2 id="toc4">List of all available modules:</h2>
@@ -78,77 +78,77 @@ These modules are beeing shipped with the official tarballs:<br />
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/control.cpp" rel="nofollow">control</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/control.cpp" rel="nofollow">control</a></td>
         <td>Grzegorz Rusin &lt;<a class="wiki_link_ext" href="mailto:pks@irc.pl" rel="nofollow">pks@irc.pl</a>, gg:0x17f1ceh&gt;</td>
         <td>?</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/date.cpp" rel="nofollow">date</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/date.cpp" rel="nofollow">date</a></td>
         <td>cgod &lt;<a class="wiki_link_ext" href="mailto:cgod@siigot.sytes.net" rel="nofollow">c@sii.ath.cx</a>&gt;</td>
         <td>Gets actual date in current timezone (!date); in GMT (!gdate); current date, time, day of week numerically (!ddate); and also can compute day of week from given date (!day &lt;yyy-mm-dd&gt;)</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/log.cpp" rel="nofollow">log</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/log.cpp" rel="nofollow">log</a></td>
         <td>Stuart Scott &lt;<a class="wiki_link_ext" href="mailto:stu@wilf.co.uk" rel="nofollow">stu@wilf.co.uk</a>&gt;</td>
         <td>Logging module producting eggdrop-format logfiles.</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/noautorejoin.cpp" rel="nofollow">noautorejoin</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/noautorejoin.cpp" rel="nofollow">noautorejoin</a></td>
         <td>patrick &lt;<a class="wiki_link_ext" href="mailto:patrick@psotnic.com" rel="nofollow">patrick@psotnic.com</a>&gt;</td>
         <td>Bans users who rejoin automatically after being kicked.</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/op.cpp" rel="nofollow">op</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/op.cpp" rel="nofollow">op</a></td>
         <td>Grzegorz Rusin &lt;<a class="wiki_link_ext" href="mailto:pks@irc.pl" rel="nofollow">pks@irc.pl</a>, gg:0x17f1ceh&gt;</td>
         <td>Provides a public !op command to let users op somebody.</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/peak.cpp" rel="nofollow">peak</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/peak.cpp" rel="nofollow">peak</a></td>
         <td>matrix &lt;<a class="wiki_link_ext" href="mailto:admin@areaunix.org" rel="nofollow">admin@areaunix.org</a>&gt;</td>
         <td>?</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/peak2.cpp" rel="nofollow">peak2</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/peak2.cpp" rel="nofollow">peak2</a></td>
         <td>cgod &lt;<a class="wiki_link_ext" href="mailto:cgod@siigot.sytes.net" rel="nofollow">c@sii.ath.cx</a>&gt;</td>
         <td>Displays last peak (max. number of users) on channel(s), can operate on more channels and can be managed directly from irc; has auto-save also</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/plog/README" rel="nofollow">plog</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/plog/README" rel="nofollow">plog</a></td>
         <td>patrick &lt;<a class="wiki_link_ext" href="mailto:patrick@psotnic.com" rel="nofollow">patrick@psotnic.com</a>&gt;</td>
         <td>Logging module with per-channel options.</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/raw.cpp" rel="nofollow">raw</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/raw.cpp" rel="nofollow">raw</a></td>
         <td>patrick &lt;<a class="wiki_link_ext" href="mailto:patrick@psotnic.com" rel="nofollow">patrick@psotnic.com</a>&gt;</td>
         <td>Lets you send raw data to the IRC server via partyline.</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/repeat.cpp" rel="nofollow">repeat</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/repeat.cpp" rel="nofollow">repeat</a></td>
         <td>patrick &lt;<a class="wiki_link_ext" href="mailto:patrick@psotnic.com" rel="nofollow">patrick@psotnic.com</a>&gt;</td>
         <td>Detects users who repeat or flood and kicks/bans them. It has also a lagcheck.</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/spam.cpp" rel="nofollow">spam</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/spam.cpp" rel="nofollow">spam</a></td>
         <td>Grzegorz Rusin &lt;<a class="wiki_link_ext" href="mailto:pks@irc.pl" rel="nofollow">pks@irc.pl</a>, gg:0x17f1ceh&gt;</td>
         <td>?</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/subop.cpp" rel="nofollow">subop</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/subop.cpp" rel="nofollow">subop</a></td>
         <td>Stuart Scott &lt;<a class="wiki_link_ext" href="mailto:stu@wilf.co.uk" rel="nofollow">stu@wilf.co.uk</a>&gt;</td>
         <td>?</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/uptime.cpp" rel="nofollow">uptime</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/uptime.cpp" rel="nofollow">uptime</a></td>
         <td>patrick &lt;<a class="wiki_link_ext" href="mailto:patrick@psotnic.com" rel="nofollow">patrick@psotnic.com</a>&gt;</td>
         <td>shows system uptime.</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/vctrl.cpp" rel="nofollow">vctrl</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/vctrl.cpp" rel="nofollow">vctrl</a></td>
         <td>patrick &lt;<a class="wiki_link_ext" href="mailto:patrick@psotnic.com" rel="nofollow">patrick@psotnic.com</a>&gt;</td>
         <td>Gives voiced users the possibility to conrol the channel. Commands are: !kick, !ban, !unban, !voice, !devoice, !topic</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/*checkout*/psotnic/psotnic-current/modules/words.cpp" rel="nofollow">words</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/*checkout*/pojeby/pojeby-current/modules/words.cpp" rel="nofollow">words</a></td>
         <td>cgod &lt;<a class="wiki_link_ext" href="mailto:c@sii.ath.cx" rel="nofollow">c@sii.ath.cx</a>&gt;</td>
         <td>Kicks/bans user who used some words which are in database (ban is based on number of violations); can operate on more channels and can be managed directly from IRC; has auto-save, ignore list, black list, chan list, etc.</td>
     </tr>
@@ -156,7 +156,7 @@ These modules are beeing shipped with the official tarballs:<br />
 
 <br />
 <h2 id="toc5">List of deprecated modules:</h2>
-These modules are not part of psotnic anymore for various reasons. If you think you need them, you can find them in older revisions in the svn repository.<br />
+These modules are not part of pojeby anymore for various reasons. If you think you need them, you can find them in older revisions in the svn repository.<br />
 But be warned: The modules haven't been adapted to the new modules-API, so you have to port them before you can use them.<br />
 
 
@@ -167,27 +167,27 @@ But be warned: The modules haven't been adapted to the new modules-API, so you h
         <td><strong>Description</strong></td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/psotnic/psotnic-current/framework/oroblram-modules/country.cpp?revision=1&amp;pathrev=139" rel="nofollow">country</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/pojeby/pojeby-current/framework/oroblram-modules/country.cpp?revision=1&amp;pathrev=139" rel="nofollow">country</a></td>
         <td>Stuart Scott &lt;<a class="wiki_link_ext" href="mailto:stu@wilf.co.uk" rel="nofollow">stu@wilf.co.uk</a>&gt;</td>
         <td>?</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/psotnic/psotnic-current/framework/oroblram-modules/mysql-required/explain.cpp?revision=1&amp;pathrev=139" rel="nofollow">explain</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/pojeby/pojeby-current/framework/oroblram-modules/mysql-required/explain.cpp?revision=1&amp;pathrev=139" rel="nofollow">explain</a></td>
         <td>Stuart Scott &lt;<a class="wiki_link_ext" href="mailto:stu@wilf.co.uk" rel="nofollow">stu@wilf.co.uk</a>&gt;</td>
         <td>?</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/psotnic/psotnic-current/framework/google.cpp?revision=1&amp;pathrev=139" rel="nofollow">google</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/pojeby/pojeby-current/framework/google.cpp?revision=1&amp;pathrev=139" rel="nofollow">google</a></td>
         <td>matrix &lt;<a class="wiki_link_ext" href="mailto:admin@areaunix.org" rel="nofollow">admin@areaunix.org</a>&gt;</td>
         <td>?</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/psotnic/psotnic-current/framework/oroblram-modules/mysql-required/seen.cpp?revision=1&amp;pathrev=139" rel="nofollow">seen</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/pojeby/pojeby-current/framework/oroblram-modules/mysql-required/seen.cpp?revision=1&amp;pathrev=139" rel="nofollow">seen</a></td>
         <td>Stuart Scott &lt;<a class="wiki_link_ext" href="mailto:stu@wilf.co.uk" rel="nofollow">stu@wilf.co.uk</a>&gt;</td>
         <td>?</td>
     </tr>
     <tr>
-        <td><a class="wiki_link_ext" href="http://psotnic.svn.sourceforge.net/viewvc/psotnic/psotnic-current/framework/oroblram-modules/seen.cpp?revision=1&amp;pathrev=139" rel="nofollow">useful</a></td>
+        <td><a class="wiki_link_ext" href="http://pojeby.svn.sourceforge.net/viewvc/pojeby/pojeby-current/framework/oroblram-modules/seen.cpp?revision=1&amp;pathrev=139" rel="nofollow">useful</a></td>
         <td>Stuart Scott &lt;<a class="wiki_link_ext" href="mailto:stu@wilf.co.uk" rel="nofollow">stu@wilf.co.uk</a>&gt;</td>
         <td>?</td>
     </tr>

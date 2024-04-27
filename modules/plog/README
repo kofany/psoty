@@ -1,12 +1,12 @@
 plog
 ----
 
-plog is a logging module for psotnic.
+plog is a logging module for pojeby.
 
 Requirements
 ------------
 
-psotnic 0.2.14 or newer.
+pojeby 0.2.14 or newer.
 
 
 Installation
@@ -14,7 +14,7 @@ Installation
 
 1) extract the tarball
 
-extract the tarball in psotnic*/modules/, so that so that you have psotnic*/modules/plog/
+extract the tarball in pojeby*/modules/, so that so that you have pojeby*/modules/plog/
 
 2) compile the module
 
@@ -29,11 +29,11 @@ This should have created a file named "plog.so" in modules/
 
 Append a line similar to this to the config file of your bot:
 
- load /path/to/psotnic/modules/plog.so
+ load /path/to/pojeby/modules/plog.so
 
 or load the module while the bot is running with this partyline command:
 
- .bc <bot> cfg +load /path/to/psotnic/modules/plog.so
+ .bc <bot> cfg +load /path/to/pojeby/modules/plog.so
 
 To verify that the module is loaded, type:
 
@@ -48,7 +48,7 @@ and to choose what should be logged.
 
 1) choose a path
 
-Default is "logs/$0.log" while $0 is a variable for the target (e.g. "#psotnic").
+Default is "logs/$0.log" while $0 is a variable for the target (e.g. "#pojeby").
 It supports also strftime format.
 
 Set the path:
@@ -59,9 +59,9 @@ strftime example:
 
  .bc <bot> plog set path /path/to/logs/%Y/%M/%d/$0.log
 
- will create logs like: /path/to/logs/2008/07/27/#psotnic.log
+ will create logs like: /path/to/logs/2008/07/27/#pojeby.log
 
-It is recommended to set an absoulte path, otherwise the location depends on how you start psotnic.
+It is recommended to set an absoulte path, otherwise the location depends on how you start pojeby.
 
 
 2) adjust other global settings (not necessary)
@@ -113,7 +113,7 @@ Sorry but the commands are not very handy :)
 Further hints
 -------------
 
-Safe channels must be added with id, e.g. !EX2TMpsotnic
+Safe channels must be added with id, e.g. !EX2TMpojeby
 
 If you need logs only as evidence for takeovers:
 

@@ -1,4 +1,4 @@
-/* voicecontrol for psotnic
+/* voicecontrol for pojeby
  *
  * This module gives a voiced (+v) user the possibility to use the following 
  * commands:

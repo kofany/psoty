@@ -15,6 +15,6 @@ When asked whether to commit certificate answer yes.
 If you dont get those questions it means that you made an error.
 
 After you finish generating files, copy keys/server.key and keys/server.crt
-to the psotnic directory.
+to the pojeby directory.
 
 That's all.

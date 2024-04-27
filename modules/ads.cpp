@@ -1,4 +1,4 @@
-/* advertisement module for psotnic (test version)
+/* advertisement module for pojeby (test version)
    written for: www.mioprofilo.it
 
    commands:
@@ -21,7 +21,7 @@
                - removes first entry (use !textlist to get the numbers)
 
    hints:
-          * this module requires psotnic 0.2.14 or newer
+          * this module requires pojeby 0.2.14 or newer
           * messages to random people are disabled by default
 */
 

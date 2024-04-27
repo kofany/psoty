@@ -9,7 +9,7 @@ struct CTCPREPLY
 
 /*
 	0 = none
-	1 = psotnic
+	1 = pojeby
 	2 = irssi (default)
  	3 = epic
 	4 = lice
@@ -50,11 +50,11 @@ CTCPREPLY ctcp_irssi[] = {
 	{ 0, NULL }
 };
 
-/* psotnic */
-CTCPREPLY ctcp_psotnic[] = {
-	{ "VERSION",		"VERSION psotnic %V - running on %O %A" },
+/* pojeby */
+CTCPREPLY ctcp_pojeby[] = {
+	{ "VERSION",		"VERSION pojeby %V - running on %O %A" },
 	{ "CLIENTINFO",		"CLIENTINFO PING VERSION TIME USERINFO CLIENTINFO" },
-	{ "USERINFO",		"USERINFO psotnic %V - running on %O %A" },
+	{ "USERINFO",		"USERINFO pojeby %V - running on %O %A" },
 	{ "TIME",			"TIME %T" },
 	{ "PING * *",   	"PING %*" },
  	{ 0, NULL }

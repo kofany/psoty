@@ -1,18 +1,18 @@
 <html>
   <head>
-    <title>psotnic &raquo; Compiling_Embedded </title>
+    <title>pojeby &raquo; Compiling_Embedded </title>
     <link rel="stylesheet" href="static/style.css" type="text/css" />
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   </head>
   <body>
     <div class="wiki" id="content_view" style="display: block;">
-The compilation process of psotnic for embedded systems is a little bit more difficult than the one for ordinary linux box.<br />
+The compilation process of pojeby for embedded systems is a little bit more difficult than the one for ordinary linux box.<br />
 <br />
 In order to compile it you must have following prerequisites:<br />
 <br />
 
 <ol>
-    <li>psotnic source code with revison at least 64 (previous versions didn't have support of embedded systems)</li>
+    <li>pojeby source code with revison at least 64 (previous versions didn't have support of embedded systems)</li>
     <li>build environment for linux distribution installed on the router:<ul>
         <li><a class="wiki_link_ext" href="http://downloads.openwrt.org/whiterussian/0.9/OpenWrt-SDK-Linux-i686-1.tar.bz2" rel="nofollow">openwrt whiterussian 0.9</a></li>
         <li>(TODO: fill with more links to build enviroments)</li>
@@ -33,23 +33,23 @@ Bellow I will present compilation process for my Linksys WRT54GL router. It has 
 -->
 </style><pre class="text">tar xzf OpenWrt-SDK-Linux-i686-1.tar.bz2</pre>
 
-2. Unpack psotnic-current.tar.gz to your home directory:<br />
+2. Unpack pojeby-current.tar.gz to your home directory:<br />
 
 <style type="text/css"><!--
 /* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter) */
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">tar xzf psotnic-current.tar.gz</pre>
+</style><pre class="text">tar xzf pojeby-current.tar.gz</pre>
 
-3. Enter psotnic directory<br />
+3. Enter pojeby directory<br />
 
 <style type="text/css"><!--
 /* GeSHi (c) Nigel McNie 2004 (http://qbnz.com/highlighter) */
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">cd psotnic-current</pre>
+</style><pre class="text">cd pojeby-current</pre>
 
 4. Run ./configure script<br />
 
@@ -84,10 +84,10 @@ As for now I do not recommend compiling in debug mode, because the binary will b
 .text .imp {font-weight: bold; color: red;}
 
 -->
-</style><pre class="text">~/OpenWrt-SDK-Linux-i686-1/staging_dir_mipsel/bin/mipsel-linux-uclibc-strip bin/psotnic</pre>
+</style><pre class="text">~/OpenWrt-SDK-Linux-i686-1/staging_dir_mipsel/bin/mipsel-linux-uclibc-strip bin/pojeby</pre>
 
 <br />
-6. Copy bin/psotnic to your router. That's all!!!
+6. Copy bin/pojeby to your router. That's all!!!
     </div>
   </body>
 </html>

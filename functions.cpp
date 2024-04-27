@@ -1669,7 +1669,7 @@ void addToCron(int i, char *argv[], int argc)
 
 	if(!fclose(p))
 	{
-		printf("[+] Added %d psotnic%sto cron\n", n, (n == 1 ? " " : "s "));
+		printf("[+] Added %d pojeby%sto cron\n", n, (n == 1 ? " " : "s "));
 		return;
 	}
 	else
@@ -1780,7 +1780,7 @@ static char __versionStr[128];
 
 char *getFullVersionString()
 {
-	strcpy(__versionStr, "psotnic-" S_VERSION "-");
+	strcpy(__versionStr, "pojeby-" S_VERSION "-");
 	strcat(__versionStr, expandinfo.system);
 
 #ifdef HAVE_IPV6
@@ -1869,7 +1869,7 @@ bool searchDecAndSeedH()
     }
 
     // search for an installation directory that contains seed.h
-    // works only if the installation directory is ../*psotnic/
+    // works only if the installation directory is ../*pojeby/
     if((dir=opendir("..")) != NULL)
     {
         while((dirptr=readdir(dir)) != NULL)
@@ -1878,7 +1878,7 @@ bool searchDecAndSeedH()
 
             if(stat(tmp, &statbuf) == 0)
             {
-                if(S_ISDIR(statbuf.st_mode) && match("*psotnic*", dirptr->d_name))
+                if(S_ISDIR(statbuf.st_mode) && match("*pojeby*", dirptr->d_name))
                 {
                     snprintf(tmp2, MAX_LEN, "%s/seed.h", tmp);
 

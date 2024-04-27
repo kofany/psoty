@@ -1,4 +1,4 @@
-/* oidentd spoofing module for psotnic
+/* oidentd spoofing module for pojeby
  *
  * This module uses the local port of a connecting bot to assign its ident in oidentd.conf.
  * Even if multiple bots connect at the same time each should get the ident set in "ident" variable.
@@ -59,7 +59,7 @@ void oidentd_spoofing()
       }
 
       if(len != 0) {
-        p=strstr(buffer, "# psotnic ");
+        p=strstr(buffer, "# pojeby ");
 
         if(p) {
           p=p+10;
@@ -91,7 +91,7 @@ void oidentd_spoofing()
     fclose(fhr);
   }
 
-  fprintf(fhw, "lport %s { reply \"%s\" } # psotnic %s %ld\n", lport, (const char *) config.ident, (const char *) config.handle, time(NULL));
+  fprintf(fhw, "lport %s { reply \"%s\" } # pojeby %s %ld\n", lport, (const char *) config.ident, (const char *) config.handle, time(NULL));
   fclose(fhw);
   unlink(oidentd_cfg);
   rename(oidentd_cfg_tmp, oidentd_cfg);

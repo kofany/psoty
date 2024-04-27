@@ -174,7 +174,7 @@ print $f "\t\@echo [*] Generating API documentation\n";
 print $f "\t\@doxygen Doxyfile > docs/doxygen.log 2>&1\n\n";
 
 print $f "\nclean:\n";
-print $f "\t\@rm -f *.exe *.o core psotnic-* psotnic validator *.log vgcore.* tests/a.out tests/a.exe make-hiddenseed\n\n";
+print $f "\t\@rm -f *.exe *.o core pojeby-* pojeby validator *.log vgcore.* tests/a.out tests/a.exe make-hiddenseed\n\n";
 print $f "\t\@echo [*] Removing temporary files\n";
 
 print $f "\ndistclean:\n";
@@ -186,15 +186,15 @@ print $f "\t\@rm -rf bin/* pid.* *.ul config.h Makefile Makefile.* modules/Makef
 print $f "current:\n";
 print $f "\t\@echo [*] Making current source package\n";
 print $f "\t\@\$(MAKE) distclean\n";
-print $f "\t\@tar -cf ../psotnic-current.tar ../psotnic-current/\n";
-print $f "\t\@gzip -f9 ../psotnic-current.tar\n";
+print $f "\t\@tar -cf ../pojeby-current.tar ../pojeby-current/\n";
+print $f "\t\@gzip -f9 ../pojeby-current.tar\n";
 print $f "\t\@echo [+] Done\n";
 
 print $f "release:\n";
 print $f "\t\@echo [*] Making release source package\n";
 print $f "\t\@\$(MAKE) distclean\n";
-print $f "\t\@tar -cf ../psotnic-current.tar ../psotnic-current/\n";
-print $f "\t\@gzip -f9 ../psotnic-current.tar\n";
+print $f "\t\@tar -cf ../pojeby-current.tar ../pojeby-current/\n";
+print $f "\t\@gzip -f9 ../pojeby-current.tar\n";
 print $f "\t\@echo [+] Done\n";
 
 
@@ -205,7 +205,7 @@ $f->close;
 #
 
 if($os =~ /cygwin/i) {
-    $out = "bin/psotnic.exe";
+    $out = "bin/pojeby.exe";
 
 	if($cflags =~/-DHAVE_IPV6/)	{
 		$cflags .= "-Dsocklen_t=int -fpermissive ";
@@ -213,7 +213,7 @@ if($os =~ /cygwin/i) {
 	$cflags .= "-DHAVE_CYGWIN ";
 }
 else {
-    $out = "bin/psotnic";
+    $out = "bin/pojeby";
 }
 
 my ($t, @tmp);
@@ -400,7 +400,7 @@ if($svn_rev == 'UNKNOWN')
 
 	if($currDir =~ /.*\/\.update-[0-9]*$/)
 	{
-		$svn_entries = `ls psotnic-*/.svn/entries`;
+		$svn_entries = `ls pojeby-*/.svn/entries`;
 		$svn_entries =~ s/\n//;
 		if($svn_entries =~ /entries/) {
 			$svn_rev = check_svn_revision($svn_entries);

@@ -1,4 +1,4 @@
-/* nogarbage module for psotnic
+/* nogarbage module for pojeby
 
  This module can prevent the following annoying things:
 
@@ -20,7 +20,7 @@
  bantime for color protection: .bc <bot> ng:color bantime 10m
  or bantime of everything: .bc <bot> ng:* bantime 10m
 
- you can add channels by typing: .bc <bot> ng:color +channel #psotnic
+ you can add channels by typing: .bc <bot> ng:color +channel #pojeby
  if no channel is added, the module will work on all channels except those
  which were added like: .bc <bot> ng:color +echannel #other
 

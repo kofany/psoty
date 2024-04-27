@@ -1,1 +1,1 @@
-valgrind --tool=memcheck --leak-check=full bin/psotnic -d -T $*
+valgrind --tool=memcheck --leak-check=full bin/pojeby -d -T $*

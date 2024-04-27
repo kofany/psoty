@@ -1056,18 +1056,18 @@ int inetconn::enableLameCrypt()
 		blowfish = new CBlowFish;
 		unsigned int version = 3 + (status & STATUS_ULCRYPT);
 
-		psotnicHeader h;
+		pojebyHeader h;
 
 		if(!info.st_size)
 		{
-			strcpy(h.id, "psotnic");
+			strcpy(h.id, "pojeby");
 			h.version = version;
-			::write(fd, &h, sizeof(psotnicHeader));
+			::write(fd, &h, sizeof(pojebyHeader));
 		}
 		else
 		{
-			::read(fd, &h, sizeof(psotnicHeader));
-			if(!strcmp(h.id, "psotnic"))
+			::read(fd, &h, sizeof(pojebyHeader));
+			if(!strcmp(h.id, "pojeby"))
 			{
 
 				if(!(status & STATUS_ULCRYPT))

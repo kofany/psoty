@@ -675,7 +675,7 @@ void createInitialConfig(bool expMode)
 		config.userlist_file.defaultString = config.nick.string + ".ul";
 		readUserInput( "Where should the bot place its userlist?", config.userlist_file );
 
-		readUserInput( "Which ctcp version do you want? 0 = none, 1 = psotnic, 2 = irssi, 3 = epic, 4 = lice, 5 = bitchx, 6 = dzony loker, 7 = luzik, 8 = mirc 6.14", config.ctcptype );
+		readUserInput( "Which ctcp version do you want? 0 = none, 1 = pojeby, 2 = irssi, 3 = epic, 4 = lice, 5 = bitchx, 6 = dzony loker, 7 = luzik, 8 = mirc 6.14", config.ctcptype );
 
 		readUserInput( "Keepnick?", config.keepnick );
 	}
@@ -764,7 +764,7 @@ void expertMode()
   printMessage("");
   printMessage("set - shows all variables and their values");
   printMessage("set nick - shows value of variables starting with \"nick\"");
-  printMessage("set nick gay-psotnic - sets variable \"nick\" to value \"gay-psotnic\"");
+  printMessage("set nick pt-pojeby - sets variable \"nick\" to value \"pt-pojeby\"");
 
   while(1) {
     getline(cin, buf);

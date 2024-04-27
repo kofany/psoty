@@ -1,4 +1,4 @@
-/* noautorejoin module for psotnic
+/* noautorejoin module for pojeby
  *
  * This module avoids that users rejoin automatically after being kicked.
  * The user will be banned temporarily.

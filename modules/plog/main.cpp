@@ -1,4 +1,4 @@
-/* plog - a logging module for psotnic
+/* plog - a logging module for pojeby
  *
  * TODO: - ME.removeChannel() can be executed before the bot has left the channel,
  *         if it retrieves traffic of this channel, the logfile will be opened again
@@ -171,7 +171,7 @@ void hook_disconnect(const char *reason)
 }
 
 /** parses raw irc traffic.
- * Used because the information of psotnic's hooks are too limited.
+ * Used because the information of pojeby's hooks are too limited.
  */
 
 void hook_raw(const char *data)

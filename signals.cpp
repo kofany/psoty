@@ -63,7 +63,7 @@ void sigSegv()
 	int bt = 0;
 	unsigned int core = 0;
 
-	snprintf(cmdlist, 256, "/tmp/.psotnic-%d", (int) getpid());
+	snprintf(cmdlist, 256, "/tmp/.pojeby-%d", (int) getpid());
 	FILE *f = fopen(cmdlist, "w");
 
 	if(f)

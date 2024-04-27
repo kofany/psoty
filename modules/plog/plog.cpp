@@ -141,7 +141,7 @@ bool Plog::record::start()
     last=NOW;
 
     if(new_file)
-        fprintf(fh, "### This log has been created by plog module for psotnic. You can get it at http://www.psotnic.com ###\n");
+        fprintf(fh, "### This log has been created by plog module for pojeby. You can get it at http://www.psotnic.com ###\n");
 
     strftime(buffer, MAX_LEN, globalSet->OPEN_STRING, localtime(&NOW));
     fprintf(fh, "%s\n", buffer);

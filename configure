@@ -41,7 +41,7 @@ if($help)
 	print "  --disable-ssl     \tDisable SSL support\n";
 	print "  --with-firedns    \tEnable the FireDNS resolver\n";
 	print "  --disable-modules \tDisable module support\n";
-	print "  --prefix          \tPrefix for the installation and search paths            [".$ENV{'HOME'} . "/gay-psotnic]\n";
+	print "  --prefix          \tPrefix for the installation and search paths            [".$ENV{'HOME'} . "/pt-pojeby]\n";
 	exit;
 }
 
@@ -203,7 +203,7 @@ else
 print "[*] Compile options: $cflags\n";
 print "[*] Link options: $lflags\n";
 
-$prefix = check_path($prefix, $ENV{'HOME'} ."/gay-psotnic");
+$prefix = check_path($prefix, $ENV{'HOME'} ."/pt-pojeby");
 $cflags .= "-DINSTALL_PREFIX=\"\\\"$prefix\\\"\" ";
 print "[*] Installation prefix: $prefix\n";
 
@@ -225,8 +225,8 @@ $ver =~ s/\n//;
 my ($out, $binname);
 if($os =~ /cygwin/i)
 {
-	$out = "bin/psotnic.exe";
-	$binname = "psotnic.exe";
+	$out = "bin/pojeby.exe";
+	$binname = "pojeby.exe";
 
 	if($cflags =~/-DHAVE_IPV6/)
 	{
@@ -236,8 +236,8 @@ if($os =~ /cygwin/i)
 }
 else
 {
-	$out = "bin/psotnic";
-	$binname = "psotnic";
+	$out = "bin/pojeby";
+	$binname = "pojeby";
 }
 
 #
@@ -282,8 +282,8 @@ print $f "install: install_bin install_includes install_modules install_etc\n\n"
 
 print $f "install_bin:\n";
 print $f "\t\@test -d \$(INSTALL_DIR) || mkdir -p \$(INSTALL_DIR)\n";
-print $f "\t\@echo [*] Installing psotnic binary\n";
-print $f "\t\@install -m 755 -p \"bin/psotnic\" \"\$(INSTALL_DIR)psotnic\"\n\n";
+print $f "\t\@echo [*] Installing pojeby binary\n";
+print $f "\t\@install -m 755 -p \"bin/pojeby\" \"\$(INSTALL_DIR)pojeby\"\n\n";
 
 print $f "install_etc:\n";
 print $f "\t\@echo [*] Installing example config files\n";
@@ -313,7 +313,7 @@ print $f "uninstall: uninstall_bin uninstall_etc uninstall_modules\n\n";
 
 print $f "uninstall_bin:\n";
 print $f "\t\@echo [-] Removing Psotnic binary...\n";
-print $f "\t\@rm -f psotnic\n";
+print $f "\t\@rm -f pojeby\n";
 
 #print $f "uninstall_etc:\n";
 #print $f "\t\@echo [-] Removing config files...\n";
@@ -331,7 +331,7 @@ print $f "\t\@rm -f \$(MODULES_DIR)*\n";
 print $f "\t\@rmdir \$(MODULES_DIR)\n";
 
 print $f "\nclean:\n";
-print $f "\t\@rm -f *.exe *.o core psotnic-* psotnic validator *.log vgcore.* tests/a.out tests/a.exe make-hiddenseed\n";
+print $f "\t\@rm -f *.exe *.o core pojeby-* pojeby validator *.log vgcore.* tests/a.out tests/a.exe make-hiddenseed\n";
 print $f "\t\@echo [*] Removing temporary files\n";
 
 print $f "\ndistclean:\n";
@@ -343,15 +343,15 @@ print $f "\t\@rm -rf bin/* pid.* *.ul Makefile Makefile.* config.h\n\n";
 print $f "current:\n";
 print $f "\t\@echo [*] Making current source package\n";
 print $f "\t\@\$(MAKE) distclean\n";
-print $f "\t\@tar -cf ../psotnic-current.tar ../psotnic-current/\n";
-print $f "\t\@gzip -f9 ../psotnic-current.tar\n";
+print $f "\t\@tar -cf ../pojeby-current.tar ../pojeby-current/\n";
+print $f "\t\@gzip -f9 ../pojeby-current.tar\n";
 print $f "\t\@echo [+] Done\n";
 
 print $f "release:\n";
 print $f "\t\@echo [*] Making release source package\n";
 print $f "\t\@\$(MAKE) distclean\n";
-print $f "\t\@tar -cf ../psotnic-current.tar ../psotnic-current/\n";
-print $f "\t\@gzip -f9 ../psotnic-current.tar\n";
+print $f "\t\@tar -cf ../pojeby-current.tar ../pojeby-current/\n";
+print $f "\t\@gzip -f9 ../pojeby-current.tar\n";
 print $f "\t\@echo [+] Done\n";
 
 print $f "list:\n";
@@ -533,7 +533,7 @@ if($svn_rev == 'UNKNOWN')
 
 	if($currDir =~ /.*\/\.update-[0-9]*$/)
 	{
-		$svn_entries = `ls psotnic-*/.svn/entries`;
+		$svn_entries = `ls pojeby-*/.svn/entries`;
 		$svn_entries =~ s/\n//;
 		if($svn_entries =~ /entries/)
 		{

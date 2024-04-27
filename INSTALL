@@ -1,16 +1,16 @@
-gay-psotnic
+pt-pojeby
 -----------
 
 compilation
 ~~~~~~~~~~~
 
-  tar xvzf gay-psotnic-0.1.tar.gz
+  tar xvzf pt-pojeby-0.1.tar.gz
 
-  cd gay-psotnic-0.1
+  cd pt-pojeby-0.1
 
   ./configure
 
-If you don't want that the bot is installed in HOME/gay-psotnic,
+If you don't want that the bot is installed in HOME/pt-pojeby,
 you should do: ./configure --prefix HOME/somethingelse
 Do not rename the directory later!
 
@@ -41,21 +41,21 @@ When asked whether to commit certificate answer yes.
 Now in easy-rsa/ or easy-rsa/keys/ should be "server.key" and "server.crt".
 You have to copy them to the install directory.
 
-  cp server.key server.crt $HOME/gay-psotnic/
+  cp server.key server.crt $HOME/pt-pojeby/
 
 create a conf
 ~~~~~~~~~~~~~
 
 change to install directory
 
-  cd $HOME/gay-psotnic
+  cd $HOME/pt-pojeby
 
-  ./psotnic -n
+  ./pojeby -n
 
 start bot
 ~~~~~~~~~
 
-  ./psotnic conf
+  ./pojeby conf
 
   
 Problems? Check AUTHORS for contact information.
