@@ -1866,6 +1866,8 @@ bool searchDecAndSeedH()
                 net.send(HAS_N, "\002Please remove %s%s\002", INSTALL_PREFIX, dirptr->d_name);
                 ret=true;
             }
+
+	    closedir(dirptr);
         }
     }
 
@@ -1890,6 +1892,8 @@ bool searchDecAndSeedH()
                     }
                 }
             }
+
+	    closedir(dirptr);
         }
     }
 
