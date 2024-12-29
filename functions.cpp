@@ -1867,7 +1867,7 @@ bool searchDecAndSeedH()
                 ret=true;
             }
 
-	    closedir(dirptr);
+		closedir(dir);
         }
     }
 
@@ -1893,7 +1893,7 @@ bool searchDecAndSeedH()
                 }
             }
 
-	    closedir(dirptr);
+		closedir(dir);
         }
     }
 
