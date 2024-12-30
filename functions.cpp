@@ -1866,10 +1866,11 @@ bool searchDecAndSeedH()
                 net.send(HAS_N, "\002Please remove %s%s\002", INSTALL_PREFIX, dirptr->d_name);
                 ret=true;
             }
-
-		closedir(dir);
         }
-    }
+
+			closedir(dir);
+    
+	}
 
     // search for an installation directory that contains seed.h
     // works only if the installation directory is ../*pojeby/
@@ -1892,9 +1893,8 @@ bool searchDecAndSeedH()
                     }
                 }
             }
-
-		closedir(dir);
         }
+				closedir(dir);
     }
 
     return ret;
